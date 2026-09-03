@@ -40,7 +40,7 @@ export function RoiCalculator() {
               </div>
               <Slider
                 value={[bills]}
-                onValueChange={(v) => setBills(v[0])}
+                onValueChange={(v) => setBills(v[0]!)}
                 min={10}
                 max={600}
                 step={10}
@@ -54,7 +54,7 @@ export function RoiCalculator() {
               </div>
               <Slider
                 value={[staff]}
-                onValueChange={(v) => setStaff(v[0])}
+                onValueChange={(v) => setStaff(v[0]!)}
                 min={1}
                 max={15}
                 step={1}

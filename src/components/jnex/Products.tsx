@@ -57,7 +57,7 @@ const products: Product[] = [
 
 function Showcase({ product }: { product: Product }) {
   const [index, setIndex] = useState(0);
-  const shot = product.shots[index];
+  const shot = product.shots[index]!;
 
   return (
     <motion.div
