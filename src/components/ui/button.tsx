@@ -20,7 +20,8 @@ const buttonVariants = cva(
         outlineNavy:
           "border border-navy/20 bg-transparent text-navy hover:border-teal hover:text-teal transition-all duration-300",
         navy: "bg-navy text-white hover:bg-navy/90 shadow-depth transition-all duration-300 hover:-translate-y-0.5",
-        tealSoft: "bg-teal/10 text-teal hover:bg-teal/15 transition-colors",
+        tealSoft:
+          "border border-teal/50 bg-teal/15 text-white hover:bg-teal/25 transition-colors",
       },
       size: {
         default: "h-9 px-4 py-2",
