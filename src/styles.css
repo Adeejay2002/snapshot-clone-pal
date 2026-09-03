@@ -19,6 +19,15 @@
  */
 
 @theme inline {
+  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --color-navy: var(--navy);
+  --color-teal: var(--teal);
+  --color-ink: var(--ink);
+  --color-accent-red: var(--accent-red);
+  --shadow-depth: 0 26px 60px -24px color-mix(in oklab, var(--navy) 45%, transparent);
+  --shadow-glow-teal: 0 18px 45px -18px color-mix(in oklab, var(--teal) 60%, transparent);
+  --shadow-glow-red: 0 16px 34px -14px color-mix(in oklab, var(--accent-red) 55%, transparent);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
