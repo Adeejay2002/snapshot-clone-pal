@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { ArrowRight, MessageCircle, ShieldCheck, Zap, Clock } from "lucide-react";
-import mask from "@/assets/mask.png.asset.json";
+import mask from "@/assets/mask-art.png.asset.json";
 import { Button } from "@/components/ui/button";
 import { waLink } from "@/lib/site";
 

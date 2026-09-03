@@ -1,5 +1,5 @@
 import { motion, useScroll, useSpring } from "motion/react";
-import mask from "@/assets/mask.png.asset.json";
+import mask from "@/assets/mask-art.png.asset.json";
 
 /** Background SVG line that draws itself as the page scrolls and ends at the mask motif. */
 export function ScrollLine() {

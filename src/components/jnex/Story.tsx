@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import mask from "@/assets/mask.png.asset.json";
+import mask from "@/assets/mask-art.png.asset.json";
 
 const chapters = [
   {
