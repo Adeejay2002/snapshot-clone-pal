@@ -59,6 +59,10 @@ export function Story() {
           someone had handed me.&rdquo;
         </p>
         <p className="mt-3 text-sm text-teal">Founder, Jenex Solution</p>
+        <p className="mt-1 text-xs text-white/45">
+          {/* TODO: add business registration number here once registered, e.g. "Registered business — BR No. XXXXXXX" */}
+          Based in Galle · Serving businesses across Sri Lanka
+        </p>
       </div>
     </section>
   );

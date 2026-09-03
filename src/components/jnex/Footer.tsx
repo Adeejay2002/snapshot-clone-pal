@@ -1,4 +1,4 @@
-import { Mail, MapPin, MessageCircle } from "lucide-react";
+import { Mail, MapPin, MessageCircle, Phone, Clock } from "lucide-react";
 import logo from "@/assets/jnex-mark.png.asset.json";
 import { site, waLink } from "@/lib/site";
 
@@ -15,7 +15,15 @@ const columns = [
     title: "Company",
     links: [
       { label: "Founder story", href: "#story" },
+      { label: "Pricing", href: "#pricing" },
       { label: "Time saver", href: "#calculator" },
+    ],
+  },
+  {
+    title: "Legal",
+    links: [
+      { label: "Privacy Policy", href: "/privacy" },
+      { label: "Terms of Service", href: "/terms" },
     ],
   },
 ];
@@ -67,20 +75,38 @@ export function Footer() {
                 <MessageCircle className="size-4 text-teal" /> WhatsApp us
               </a>
             </li>
-            <li className="inline-flex items-center gap-2">
-              <Mail className="size-4 text-teal" /> {site.email}
+            <li>
+              <a href={`tel:${site.phoneTel}`} className="inline-flex items-center gap-2 hover:text-teal">
+                <Phone className="size-4 text-teal" /> {site.phoneDisplay}
+              </a>
+            </li>
+            <li>
+              <a href={`mailto:${site.email}`} className="inline-flex items-center gap-2 hover:text-teal">
+                <Mail className="size-4 text-teal" /> {site.email}
+              </a>
             </li>
             <li className="inline-flex items-center gap-2">
               <MapPin className="size-4 text-teal" /> {site.location}
+            </li>
+            <li className="inline-flex items-center gap-2">
+              <Clock className="size-4 text-teal" /> {site.supportHours}
             </li>
           </ul>
         </div>
       </div>
 
       <div className="border-t border-border">
-        <p className="mx-auto max-w-7xl px-5 py-6 text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Jenex Solution. All rights reserved.
-        </p>
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-5 py-6 text-xs text-muted-foreground">
+          <p>© {new Date().getFullYear()} Jenex Solution. All rights reserved.</p>
+          <div className="flex gap-4">
+            <a href="/privacy" className="hover:text-teal">
+              Privacy Policy
+            </a>
+            <a href="/terms" className="hover:text-teal">
+              Terms of Service
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   );

@@ -102,17 +102,22 @@ function Showcase({ product }: { product: Product }) {
             </div>
           </div>
 
-          <div className="glass mt-6 flex items-center gap-4 rounded-2xl p-4">
+          <a
+            href={waLink(`Hi! Can I book a live walkthrough of ${product.name}?`)}
+            target="_blank"
+            rel="noreferrer"
+            className="glass mt-6 flex items-center gap-4 rounded-2xl p-4 transition-colors hover:bg-white/10"
+          >
             <span className="grid size-11 shrink-0 place-items-center rounded-full bg-accent-red text-white">
               <Play className="size-4 fill-current" />
             </span>
             <div>
-              <p className="text-sm font-medium text-white">Walkthrough video</p>
+              <p className="text-sm font-medium text-white">Book a live walkthrough</p>
               <p className="text-xs text-white/55">
-                Full {product.name} demo footage — coming soon
+                15-minute screen-share demo of {product.name}, on WhatsApp
               </p>
             </div>
-          </div>
+          </a>
         </div>
 
         <div className="flex flex-col justify-between">
@@ -126,8 +131,8 @@ function Showcase({ product }: { product: Product }) {
           </ul>
           <div className="mt-8 flex flex-col gap-3">
             <Button variant="cta" size="lg" asChild>
-              <a href={`#trial-${product.id}`} download>
-                <Download className="size-4" /> Download 3-Day Free Trial
+              <a href={waLink(product.wa)} target="_blank" rel="noreferrer">
+                <Download className="size-4" /> Request 3-Day Free Trial
               </a>
             </Button>
             <Button size="lg" variant="tealSoft" asChild>

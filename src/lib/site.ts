@@ -2,10 +2,13 @@
 export const site = {
   brand: "Jenex Solution",
   short: "JNEX",
-  // TODO: replace with the real business WhatsApp number (country code, no +)
-  whatsappNumber: "94770000000",
-  email: "hello@jenexsolution.lk",
-  location: "Colombo, Sri Lanka",
+  whatsappNumber: "94764026876",
+  phoneDisplay: "076 402 6876",
+  phoneTel: "+94764026876",
+  email: "jnexlk@gmail.com",
+  location: "Wakwella Road, Galle",
+  // TODO: confirm these against your actual working hours
+  supportHours: "Mon – Sat, 8.00 AM – 8.00 PM",
   trialUrl: "#trial",
 };
 
