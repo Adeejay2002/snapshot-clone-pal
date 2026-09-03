@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { MessageCircle, Menu, X } from "lucide-react";
-import logo from "@/assets/jnex-logo.jpg.asset.json";
+import logo from "@/assets/jnex-mark.png.asset.json";
 import { waLink } from "@/lib/site";
 import { Button } from "@/components/ui/button";
 
@@ -35,7 +35,7 @@ export function Navbar() {
             alt="Jenex Solution"
             width={48}
             height={48}
-            className="h-11 w-11 rounded-xl object-contain"
+            className="h-11 w-11 object-contain"
           />
           <span className="hidden text-sm font-semibold tracking-[0.28em] text-navy sm:block">
             JNEX SOLUTION

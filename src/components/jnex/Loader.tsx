@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
-import logo from "@/assets/jnex-logo.jpg.asset.json";
+import logo from "@/assets/jnex-mark.png.asset.json";
 
 export function Loader() {
   const [done, setDone] = useState(false);
@@ -24,14 +24,14 @@ export function Loader() {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              className="glass rounded-3xl p-6"
+              className="glass rounded-3xl px-8 py-7"
             >
               <img
                 src={logo.url}
                 alt="Jenex Solution logo"
                 width={160}
                 height={160}
-                className="h-28 w-28 rounded-2xl object-contain mix-blend-screen invert-0"
+                className="h-24 w-24 object-contain brightness-0 invert"
               />
             </motion.div>
             <div className="h-px w-40 overflow-hidden bg-white/15">

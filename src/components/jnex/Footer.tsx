@@ -1,5 +1,5 @@
 import { Mail, MapPin, MessageCircle } from "lucide-react";
-import logo from "@/assets/jnex-logo.jpg.asset.json";
+import logo from "@/assets/jnex-mark.png.asset.json";
 import { site, waLink } from "@/lib/site";
 
 const columns = [
@@ -31,7 +31,7 @@ export function Footer() {
             width={56}
             height={56}
             loading="lazy"
-            className="h-12 w-12 rounded-xl object-contain"
+            className="h-12 w-12 object-contain"
           />
           <p className="mt-4 max-w-xs text-sm text-muted-foreground">
             Dependable POS and institute software, engineered in Sri Lanka for owners who
