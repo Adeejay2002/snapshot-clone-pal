@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { ArrowRight, MessageCircle, ShieldCheck, Zap, Clock } from "lucide-react";
-import mask from "@/assets/mask-art.png.asset.json";
+import guardian from "@/assets/guardian-hero.jpg";
 import { Button } from "@/components/ui/button";
 import { waLink } from "@/lib/site";
 
@@ -88,15 +88,15 @@ export function Hero() {
           transition={{ delay: 2.1, duration: 1, ease: [0.22, 1, 0.36, 1] }}
           className="relative"
         >
-          <div className="relative overflow-hidden rounded-[2rem] bg-ink p-10 shadow-depth">
+          <div className="relative overflow-hidden rounded-[2rem] bg-ink p-6 shadow-depth sm:p-8">
             <div className="absolute inset-0 bg-grid opacity-[0.16]" />
             <div className="absolute -left-10 -top-10 h-52 w-52 rounded-full bg-teal/25 blur-3xl" />
             <motion.img
-              src={mask.url}
-              alt="Traditional Sri Lankan Raksha mask motif"
-              width={520}
-              height={520}
-              className="relative mx-auto w-full max-w-[340px] drop-shadow-[0_20px_45px_rgba(0,0,0,0.45)]"
+              src={guardian}
+              alt="Traditional Sri Lankan Raksha guardian, reimagined as a digital protector for JNEX"
+              width={1400}
+              height={782}
+              className="relative mx-auto w-full max-w-[460px] rounded-2xl drop-shadow-[0_20px_45px_rgba(0,0,0,0.45)]"
               animate={{ y: [0, -14, 0] }}
               transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
             />
