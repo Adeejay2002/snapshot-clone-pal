@@ -3,10 +3,15 @@ import { AnimatePresence, motion } from "motion/react";
 import { Download, MessageCircle, Play, Store, GraduationCap, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { waLink } from "@/lib/site";
-import posA from "@/assets/pos-shot-1.jpg";
-import posB from "@/assets/pos-shot-2.jpg";
-import lmsA from "@/assets/lms-shot-1.jpg";
-import lmsB from "@/assets/lms-shot-2.jpg";
+import posBilling from "@/assets/pos4.png.asset.json";
+import posMenu from "@/assets/pos2.png.asset.json";
+import posReports from "@/assets/pos.png.asset.json";
+import posHistory from "@/assets/pos1.png.asset.json";
+import posReceipt from "@/assets/pos3.png.asset.json";
+import posLock from "@/assets/pos5.png.asset.json";
+import lmsDashboard from "@/assets/lms1.png.asset.json";
+import lmsProgress from "@/assets/lms.png.asset.json";
+import lmsLogin from "@/assets/lms2.png.asset.json";
 
 type Product = {
   id: string;
